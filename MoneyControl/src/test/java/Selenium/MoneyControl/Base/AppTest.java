@@ -15,9 +15,14 @@ import Selenium.MoneyControl.Pages.HomePageTest;
 public class AppTest {	
 	private ChromeDriver driver;
 	@Test				
-	public void GetMutualFundsDetails() {
+	public void GetMutualFundsDetails() throws IOException {
 	HomePageTest HomePage = new HomePageTest(driver);
-	HomePage.MutualFundsRunner();
+	try {
+		HomePage.MutualFundsRunner();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 		 
 		
 }

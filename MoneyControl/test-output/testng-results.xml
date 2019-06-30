@@ -2,28 +2,61 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="396831" started-at="2019-03-22T17:54:42Z" finished-at="2019-03-22T18:01:19Z">
+  <suite name="Default suite" duration-ms="380735" started-at="2019-04-02T17:48:35Z" finished-at="2019-04-02T17:54:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="396831" started-at="2019-03-22T17:54:42Z" finished-at="2019-03-22T18:01:19Z">
+    <test name="Default test" duration-ms="380735" started-at="2019-04-02T17:48:35Z" finished-at="2019-04-02T17:54:56Z">
       <class name="Selenium.MoneyControl.Base.AppTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium.MoneyControl.Base.AppTest@5b275dab]" name="setUp" is-config="true" duration-ms="26461" started-at="2019-03-22T17:54:42Z" finished-at="2019-03-22T17:55:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium.MoneyControl.Base.AppTest@5b275dab]" name="setUp" is-config="true" duration-ms="13660" started-at="2019-04-02T17:48:35Z" finished-at="2019-04-02T17:48:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="GetMutualFundsDetails()[pri:0, instance:Selenium.MoneyControl.Base.AppTest@5b275dab]" name="GetMutualFundsDetails" duration-ms="370326" started-at="2019-03-22T17:55:09Z" finished-at="2019-03-22T18:01:19Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method status="FAIL" signature="GetMutualFundsDetails()[pri:0, instance:Selenium.MoneyControl.Base.AppTest@5b275dab]" name="GetMutualFundsDetails" duration-ms="367010" started-at="2019-04-02T17:48:49Z" finished-at="2019-04-02T17:54:56Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Index: 7, Size: 5]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6MSCEI0L', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\hp\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51536}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: f47ca57e3875b3e80b4d4a29e0133cb8
+*** Element info: {Using=xpath, value=//*[@id= 'portfolioEquityTable']//td[@class = 'robo_medium']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 7, Size: 5
-at java.util.ArrayList.rangeCheck(Unknown Source)
-at java.util.ArrayList.get(Unknown Source)
-at Selenium.MoneyControl.Pages.HomePageTest.getMutualFunds(HomePageTest.java:46)
-at Selenium.MoneyControl.Pages.HomePageTest.getMutualFundSectors(HomePageTest.java:36)
-at Selenium.MoneyControl.Pages.HomePageTest.MutualFundsRunner(HomePageTest.java:21)
-at Selenium.MoneyControl.Base.AppTest.GetMutualFundsDetails(AppTest.java:20)
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6MSCEI0L', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\hp\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51536}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: f47ca57e3875b3e80b4d4a29e0133cb8
+*** Element info: {Using=xpath, value=//*[@id= 'portfolioEquityTable']//td[@class = 'robo_medium']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at Selenium.MoneyControl.Pages.HomePageTest.getMutualFundsStocks(HomePageTest.java:101)
+at Selenium.MoneyControl.Pages.HomePageTest.getMutualFunds(HomePageTest.java:91)
+at Selenium.MoneyControl.Pages.HomePageTest.getMutualFundSectors(HomePageTest.java:60)
+at Selenium.MoneyControl.Pages.HomePageTest.MutualFundsRunner(HomePageTest.java:32)
+at Selenium.MoneyControl.Base.AppTest.GetMutualFundsDetails(AppTest.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,7 +84,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetMutualFundsDetails -->
